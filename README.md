@@ -77,14 +77,6 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies n bytes from memory area src to memory of dst. The memory  areas  must  not  overlap.  Use [ft_memmove](#ft_memmove) if the memory areas do overlap.| Memory area dst | Memory area src | The number of bytes | A pointer to the memory area dst
 
- ## [ft_memccpy](libft/ft_memccpy.c)
-
-`void       *ft_memccpy(void *dst, const void *src, int c, size_t n)`
-
-Description | Param. #1 | Param. #2 | Param. #3 | Param. #4 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
-Copies n bytes from memory area  src  to memory  area  dst, stopping when the character c is found, or after n characters are copied, whichever comes first. If copying takes place between objects that overlap, the behavior is undefined.| Memory area dst | Memory area src | A character to search | Number of bytes that memccpy() copied | A pointer to the next character in dst after c, or NULL if c was not found in the first n bytes
-
 ## [ft_memmove](libft/ft_memmove.c)
 
 `void       *ft_memmove(void *dst, const void *src, size_t len)`
@@ -139,14 +131,6 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Locates the last occurrence of 'c' in the string pointed to by 's'. The terminating null character is considered to be part of the string, therefore if 'c' is '\0', locates the terminating '\0'| Pointer to string | Character to be located | A pointer to the last occurrence of the character c in the string or NULL if the character is not found
 
-## [ft_strcpy](libft/ft_strcpy.c)
-
-`char       *ft_strcpy(char *dst, const char *src)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Copy a string, including the terminating null byte ('\0') | Destination array | String to be copied | A pointer to the destination string dst
-
 ## [ft_strlcpy](libft/ft_strlcpy.c)
 
 `size_t     ft_strlcpy(char *dst, const char *src, size_t dstsize)`
@@ -154,14 +138,6 @@ Copy a string, including the terminating null byte ('\0') | Destination array | 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Copies up to dstsize - 1 characters from the NUL-terminated string src to dst, NUL-terminating the result| Destination array | String to be copied | Number of characters to be copied from src | Total length of the string to create (length of src)
-
-## [ft_strcat](libft/ft_strcat.c)
-
-`char       *ft_strcpy(char *dst, const char *src)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Concatenate two strings (append s2 to s1), including the terminating null byte ('\0') | Destination array | String to be appended to dst | A pointer to the resulting string dst
 
 ## [ft_strlcat](libft/ft_strlcat.c)
 
@@ -201,7 +177,7 @@ Convert a string to a integer | The string to be converted to int | The converte
 
 Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
-Check for a alpabetic character, it is equivalent to ([ft_isupper](#ft_isupper)(c) or [ft_islower](#ft_islower)(c)) | The character to test | 0 if the character tests false and 1 if the character tests true
+Check for a alpabetic character| The character to test | 0 if the character tests false and 1 if the character tests true
 
 ## [ft_isdigit](libft/ft_isdigit.c)
 
@@ -225,7 +201,7 @@ Check for an alphanumeric character; it is equivalent to ([ft_isalpha](#ft_isalp
 
 Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
-Checks for an ASCII character, which is any character between 0 and octal 0177 inclusive | The character to test | 0 if the character tests false and 1 if the character tests true
+Checks for an ASCII character, which is any character between 0 and octal 177 inclusive | The character to test | 0 if the character tests false and 1 if the character tests true
 
 ## [ft_isprint](libft/ft_isprint.c)
 
@@ -276,7 +252,7 @@ Allocates (with malloc) and returns a new string, result of the concatenation of
 
 ## [ft_strtrim](libft/ft_strtrim.c)
 
-`char *ft_strjoin(char const *s1, char const *s2)`
+`char *ft_strtrim(char const *s1, char const *set)`
 
 Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
