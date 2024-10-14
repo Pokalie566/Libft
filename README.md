@@ -259,14 +259,14 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
  Allocates enough space for count objects that are size bytes of memory each, and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero | Number of elements to be allocated | Size of elements | A pointer to the allocated memory, or NULL if the request fails
 
-## [ft_substr]
+## [ft_substr](libft/ft_substr.c)
 `char   *ft_substr(char const *s, unsigned int start, size_t len)`
 
 Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a substring from the string given in argument. The substring begins at index 'start' and is of maximum size 'len'| The string from which create the substring | The start index of the substring in the string| The maximum length of the substring | The substring. NULL if the allocation fails
 
-## [ft_strjoin]
+## [ft_strjoin](libft/ft_strjoin.c)
 
 `char *ft_strjoin(char const *s1, char const *s2)`
 
@@ -274,7 +274,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a new string, result of the concatenation of s1 and s2 |The prefix string |The suffix string | The new string. NULL if the allocation fails
 
-## [ft_strtrim]
+## [ft_strtrim](libft/ft_strtrim.c)
 
 `char *ft_strjoin(char const *s1, char const *s2)`
 
@@ -282,7 +282,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a copy of the string given as argument without the characters specified in the set argument at the beginning and the end of the string|The string to be trimmed |The reference set of character to trim | The trimmed string. NULL if the allocation fails
 
-## [ft_strsplit]
+## [ft_strsplit](libft/ft_split.c)
 
 `char **ft_split(char const *s, char c)`
 
@@ -290,7 +290,7 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns  an array of strings obtained by splitting s using the character 'c' as a delimiter. The array must be ended by a NULL pointer|The string to be split |The delimiter character| The array of new strings result of the split. NULL if the allocation fails
 
-## [ft_strmapi]
+## [ft_strmapi](libft/ft_strmapi.c)
 
 `char *ft_strmapi(char const *s, char (*f)(unsigned int, char))`
 
@@ -298,22 +298,12 @@ Description | Param. #1 | Param. #2 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------:
 Applies the function f to each character of the string passed as argument to create a new string (with malloc) resulting from successive applications of f |The string on which to iterate| The function to apply to each character| The string created from the successive applications of f. Returns NULL if the allocation fails
 
-## [ft_atoi]
+## [ft_itoa](libft/ft_itoa.c)
 
 `char   ft_itoa(int n)`
 
 Description | Param. #1 | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled | The integer to convert | The string representing the integer. NULL if the allocation fails.
-
-
-## ft_capitalize
-
-`char  *ft_capitalize(char *s)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Capitalizes the first letter of every word in a string	| The string to capitalize		| The new string with capitalized words 
-
 
 [1]: https://42angouleme.fr/
