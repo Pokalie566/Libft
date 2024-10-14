@@ -123,22 +123,6 @@ Description | Param. #1 | Return Values
 :-----------: | :-----------: | :-----------:
 Duplicate string s1. Memory  for  the new string is obtained with malloc, and can  be  freed with free | The string to duplicate| A pointer   to  the  duplicated  string.  NULL  if  insufficient  memory  was available
 
-## [ft_strndup](libft/ft_strndup.c)
-
-`char       *ft_strndup(const char *s, size_t n)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Allocates a specific amount of memory to copy a string | The string to copy | The maximum amount of characters to copy from the string | A pointer to the new string
-
-## [ft_strcdup](libft/ft_strcdup.c)
-
-`char       *ft_strcdup(const char *s, int c)`
-
-Description | Param. #1 | Param. #2 | Return Value
-:-----------: | :-----------: | :-----------: | :-----------:
-Allocates a specific amount of memory to copy a string until the occurence of c. Example: ft_strcdup("Blue", 'u') -> "Bl"  | The string to copy before c | The character c | A pointer to the new string
-
 ## [ft_strchr](libft/ft_strchr.c)
 
 `char		*ft_strchr(const char *s, int c)`
@@ -323,48 +307,6 @@ Description | Param. #1 | Return Value
 Allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled | The integer to convert | The string representing the integer. NULL if the allocation fails.
 
 
-
-
-
-
-
-
-
-
-## [ft_islower](libft/ft_islower.c)
-
-`int  ft_islower(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for a lowercase character | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isupper](libft/ft_isupper.c)
-
-`int ft_isupper(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
-Check for an uppercase character | The character to test | 0 if the character tests false and 1 if the character tests true
-
-## [ft_isspace](libft/ft_isspace.c)
-
-`int ft_isspace(int c)`
-
-Description | Param. #1 | Return Value
-:-----------: | :-----------: | :-----------:
- Checks for white-space characters. These are: space, form-feed ('\f'), newline ('\n'),  carriage  return('\r'), horizontal tab ('\t'), and vertical tab ('\v').| The character to test | 0 if the character tests false and 1 if the character tests true
-
-
-
-
-
-
-
-
-
-
-
 ## ft_capitalize
 
 `char  *ft_capitalize(char *s)`
@@ -375,4 +317,3 @@ Capitalizes the first letter of every word in a string	| The string to capitaliz
 
 
 [1]: https://42angouleme.fr/
-[2]:
