@@ -1,7 +1,7 @@
 # Libft - @42Born2Code
-<img src="https://github.com/vvarodi/libft_42/blob/master/Libft.JPG" />
+<img src="https://github.com/Pokalie566/Libft/blob/main/Resultat_Libft.png" />
 
-![Text](https://snipboard.io/DuJ8ON.jpg)
+![Text](https://github.com/Pokalie566/Libft/blob/main/Resultat_pressis_Libft.png)
 
 ### TOC
 * [What is libft?](#what-is-libft)
@@ -374,5 +374,5 @@ Description | Param. #1 | Return Value
 Capitalizes the first letter of every word in a string	| The string to capitalize		| The new string with capitalized words 
 
 
-[1]: https://www.42madrid.com/ 
+[1]: https://42angouleme.fr/
 [2]:
