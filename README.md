@@ -33,9 +33,7 @@ Libc functions | Additional functions | Bonus Functions
 [ft_memcmp](#ft_memcmp)		|[ft_putchar_fd](#ft_putchar_fd)| [ft_lstclear](#ft_lstclear)
 [ft_strlen](#ft_strlen)		|[ft_putstr_fd](#ft_putstr_fd)	| [ft_lstiter](#ft_lstiter)
 [ft_strdup](#ft_strdup)		|[ft_putendl_fd](#ft_putendl_fd)| [ft_lstmap](#ft_lstmap)
-[ft_strcpy](#ft_strcpy)		|[ft_putnbr_fd](#ft_putnbr_fd)	|
-[ft_strlcpy](#ft_strlcpy)	| 	|
-[ft_strcat](#ft_strcat)		| 	|
+[ft_strlcpy](#ft_strlcpy)	|[ft_putnbr_fd](#ft_putnbr_fd)	|
 [ft_strlcat](#ft_strlcat)	| 	|
 [ft_strchr](#ft_strchr)		| 	|
 [ft_strrchr](#ft_strrchr)	| 	|
