@@ -12,11 +12,16 @@
 
 CFLAGS = -Wall -Werror -Wextra
 
-CC = gcc
+CC = cc
+
+INCS = -I ./includes
 
 NAME = libft.a
 
-SRC =	ft_isalpha.c \
+SRC_PATH = src/
+OBJ_PATH = obj/
+
+SRCS =	ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
@@ -61,23 +66,24 @@ SRCB =	ft_lstnew.c \
 	ft_lstiter.c \
 	ft_lstmap.c \
 
-BOBJ = $(SRCB:.c=.o)
-
-OBJ = $(SRC:.c=.o)
+OBJS := $(addprefix $(OBJ_PATH), $(SRCS:%.c=%.o))
+BOBJS := $(addprefix $(OBJ_PATH), $(SRCB:%.c=%.o))
+SRCS := $(addprefix $(SRC_PATH), $(SRCS))
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJS)
 	$(AR) -r $@ $?
 
-bonus: $(OBJ) $(BOBJ)
+bonus: $(OBJS) $(BOBJS)
 	$(AR) -r $(NAME) $?
 
-%.o: %.c
-	$(CC) -c $(CFLAGS) $?
+$(OBJ_PATH)%.o: $(SRC_PATH)%.c
+	mkdir -p $(OBJ_PATH)
+	$(CC) $(CFLAGS) $(INCS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(BOBJ)
+	rm -rf $(OBJ_PATH)
 
 fclean: clean
 	rm -f $(NAME)
