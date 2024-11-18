@@ -6,7 +6,7 @@
 #    By: adeboose <adeboose@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/09 14:55:27 by adeboose          #+#    #+#              #
-#    Updated: 2024/10/10 12:12:52 by adeboose         ###   ########.fr        #
+#    Updated: 2024/11/15 13:32:34 by adeboose         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,40 +21,45 @@ NAME = libft.a
 SRC_PATH = src/
 OBJ_PATH = obj/
 
-SRCS =	ft_isalpha.c \
-	ft_isdigit.c \
-	ft_isalnum.c \
-	ft_isascii.c \
-	ft_isprint.c \
-	ft_strlen.c \
-	ft_memset.c \
-	ft_bzero.c \
-	ft_memcpy.c \
-	ft_memmove.c \
-	ft_strlcpy.c \
-	ft_strlcat.c \
-	ft_toupper.c \
-	ft_tolower.c \
-	ft_strchr.c \
-	ft_strrchr.c \
-	ft_strncmp.c \
-	ft_memchr.c \
-	ft_memcmp.c \
-	ft_strnstr.c \
-	ft_atoi.c \
-	ft_calloc.c \
-	ft_strdup.c \
-	ft_substr.c \
-	ft_strjoin.c \
-	ft_strtrim.c \
-	ft_split.c \
-	ft_putnbr_fd.c \
-	ft_putstr_fd.c \
-	ft_putchar_fd.c \
-	ft_itoa.c \
-	ft_strmapi.c \
-	ft_striteri.c \
-	ft_putendl_fd.c \
+SRCS =				\
+	ft_isalpha.c	\
+	ft_isdigit.c	\
+	ft_isalnum.c	\
+	ft_isascii.c	\
+	ft_isprint.c	\
+	ft_strlen.c		\
+	ft_memset.c		\
+	ft_bzero.c		\
+	ft_memcpy.c		\
+	ft_memmove.c	\
+	ft_strlcpy.c	\
+	ft_strlcat.c	\
+	ft_toupper.c	\
+	ft_tolower.c	\
+	ft_strchr.c		\
+	ft_strrchr.c	\
+	ft_strncmp.c	\
+	ft_memchr.c		\
+	ft_memcmp.c		\
+	ft_strnstr.c	\
+	ft_atoi.c		\
+	ft_calloc.c		\
+	ft_strdup.c		\
+	ft_substr.c		\
+	ft_strjoin.c	\
+	ft_strtrim.c	\
+	ft_split.c		\
+	ft_putnbr_fd.c	\
+	ft_putstr_fd.c	\
+	ft_putchar_fd.c	\
+	ft_itoa.c		\
+	ft_strncpy.c	\
+	ft_strcpy.c		\
+	ft_strncat.c	\
+	ft_strcat.c		\
+	ft_strmapi.c	\
+	ft_striteri.c	\
+	ft_putendl_fd.c	\
 
 SRCB =	ft_lstnew.c \
 	ft_lstadd_front.c \
@@ -73,10 +78,10 @@ SRCS := $(addprefix $(SRC_PATH), $(SRCS))
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) -r $@ $?
+	ar -r $@ $?
 
 bonus: $(OBJS) $(BOBJS)
-	$(AR) -r $(NAME) $?
+	ar -r $(NAME) $?
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	mkdir -p $(OBJ_PATH)
