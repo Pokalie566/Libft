@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-float		ft_power(int nb, int exp)
+float	ft_power(int nb, int exp)
 {
 	float		result;
 
@@ -26,6 +26,6 @@ float		ft_power(int nb, int exp)
 		if (exp > 0)
 			return (nb * result * result);
 		else
-			return (result * result) / nb;
+			return ((result * result) / nb);
 	}
 }
