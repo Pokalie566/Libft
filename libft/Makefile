@@ -60,6 +60,7 @@ SRCS =				\
 	ft_strncat.c	\
 	ft_strtol.c		\
 	ft_power.c		\
+	ft_strtok.c		\
 	ft_strcat.c		\
 	ft_strmapi.c	\
 	ft_striteri.c	\
