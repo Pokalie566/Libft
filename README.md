@@ -91,7 +91,7 @@ Description | Param. #1 | Param. #2 | Param. #3 | Return Value
 :-----------: | :-----------: | :-----------: | :-----------: | :-----------:
 Scans the initial n bytes of s for the first instance of c | Memory area s| A character to search | The number of bytes | A pointer to the matching byte or NULL if the character does not occur in the given memory area
 
- ## [ft_memcmp](libft/ft_memcmp.c)
+ ## [ft_memcmp](libft/src/ft_memcmp.c)
 
 `void       *ft_memcmp(void *dst, const void *src, size_t n)`
 
